@@ -11,6 +11,6 @@ export const fetchPaginatedUsers = async (page, limit) => {
     const response = await axios.get(`https://jsonplaceholder.typicode.com/users`);
     const start = (page - 1) * limit;
     const end = start + limit;
-    return response.data.slice(start, end); // Simulate paginated data
+    return response.data.slice(start, end); 
   };
   
